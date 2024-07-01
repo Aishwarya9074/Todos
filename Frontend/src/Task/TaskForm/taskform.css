@@ -1,0 +1,117 @@
+/* taskform.css */
+.main-task {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 10px;
+    background: url("/public/todo-home.jpg") center/cover fixed;
+  }
+  
+  .task-forms {
+    background-color: #2422224c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    margin: auto;
+  }
+  
+  .task-forms h1 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 2em;
+  }
+  
+  .task-forms ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task-forms li {
+    background: #c79999a0;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    font-size: 1.2em;
+    position: relative; /* Added to position the delete button */
+  }
+  
+  .task-forms li:hover {
+    transform: scale(1.02);
+  }
+  
+  .task-forms li strong {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1.4em;
+  }
+  
+  .task-forms li p {
+    margin: 5px 0 10px;
+    color: #555;
+    font-size: 1.2em;
+  }
+  
+  .task-forms li span {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .task-forms li span.status {
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 1.1em;
+  }
+  
+  .task-forms li span.status.pending {
+    background-color: #f39c12;
+  }
+  
+  .task-forms li span.status['in-progress'] {
+    background-color: #3498db;
+  }
+  
+  .task-forms li span.status.completed {
+    background-color: #2ecc71;
+  }
+  
+  .delete-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .delete-button:hover {
+    background-color: #c0392b;
+  }
+  
+  .btn button {
+    background-color: rgb(67, 137, 86);
+    color: blanchedalmond;
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .btn button:hover {
+    background-color: #555;
+    color: #fff;
+  }
+  

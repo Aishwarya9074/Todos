@@ -1,0 +1,67 @@
+.form-tasks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 10px;
+    background: url('/public/tasks.jpg')center/cover fixed;
+
+}
+.task-form {
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #738076cb;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-form h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .task-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .task-form input[type="text"],
+  .task-form select,
+  .task-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .task-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .task-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .task-form select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 30px; /* Adjust for arrow indicator */
+    background: url("data:image/svg+xml;utf8,<svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z' fill='%23343a40'/></svg>") no-repeat right 10px center/15px auto #fff;
+  }
+  
+  .task-form select:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  
